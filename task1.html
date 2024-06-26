@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:aquamarine;
+        }
+        .div{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            background-color:blue;
+
+            animation-name: colorchange;
+            animation-duration: 0.70s;
+            animation-iteration-count: infinite;
+            border-radius: 500%;
+            top:300px;
+            left:200px;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease;
+
+
+
+        }
+        .div1{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            background-color:red;
+            animation-name: a;
+            animation-duration: 0.80s;
+            animation-iteration-count: infinite;
+            border-radius: 500%;
+            top:300px;
+            left:200px;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease;
+        }
+
+        .div2{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            background-color:chartreuse;
+            animation-name: b;
+            animation-duration: 0.75s;
+            animation-iteration-count: infinite;
+            border-radius: 500%;
+            top:300px;
+            left:200px;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease;
+        }
+        .div3{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            background-color:violet;
+            animation-name: c;
+            animation-duration: 0.85s;
+            animation-iteration-count: infinite;
+            border-radius: 500%;
+            top:300px;
+            left:200px;
+            animation-timing-function: ease;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes colorchange{
+            0%{
+                transform: translateX(0) translateY(0);
+                
+            }
+            100%{
+                transform: translateY(-90px);
+                
+            }
+        }
+        @keyframes a{
+            0%{
+                transform: translateX(0px) translateY(0px);
+            }
+            100%{
+                transform: translateX(0px) translateY(-100px);
+            }
+        }
+        @keyframes b{
+            0%{
+                transform: translateX(0px) translateY(0px);
+            }
+            100%{
+                transform: translateX(0px) translateY(-70px);
+            }
+        
+        }
+        @keyframes c{
+            0%{
+                transform: translateX(0px) translateY(0px);
+            }
+            100%{
+                transform: translateX(0px) translateY(-100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    
+</body>
+</html>

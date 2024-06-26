@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:aqua;
+            
+           
+            
+        }
+        .div{
+            display: inline-block;
+            width: 20px;
+            height: 40px;
+            position: relative;
+            background-color:blue;
+
+            animation-name: colorchange;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            border-radius: 10%;
+            top:300px;
+            left:400px;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease;
+
+
+
+        }
+        .div1{
+            display: inline-block;
+            width: 20px;
+            height: 50px;
+            position: relative;
+            background-color:red;
+
+            animation-name: a;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            border-radius: 10%;
+            top:300px;
+            left:400px;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease;
+        }
+
+        .div2{
+            display: inline-block;
+            width: 20px;
+            height: 60px;
+            position: relative;
+            background-color:chartreuse;
+            animation-name: b;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            border-radius: 10%;
+            top:300px;
+            left:400px;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease;
+        }
+        .div3{
+            display: inline-block;
+            width: 20px;
+            height: 40px;
+            position: relative;
+            background-color:violet;
+            animation-name: c;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            border-radius: 10%;
+            top:300px;
+            left:400px;
+            animation-timing-function: ease;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes colorchange{
+            25%{
+    transform: scaleY(.6);
+  }
+  50%{
+    transform: scaleY(.4);
+  }
+  75%{
+    transform: scaleY(.8);
+  }
+        }
+        @keyframes a{
+            25%{
+    transform: scaleY(1);
+  }
+  50%{
+    transform: scaleY(.4);
+  }
+  75%{
+    transform: scaleY(.6);
+  }
+        }
+        @keyframes b{
+            25%{
+    transform: scaleY(1);
+  }
+  50%{
+    transform: scaleY(.4);
+  }
+  75%{
+    transform: scaleY(1.2);
+  }
+        
+        }
+        @keyframes c{
+            25%{
+    transform: scaleY(.6);
+  }
+  50%{
+    transform: scaleY(.4);
+  }
+  75%{
+    transform: scaleY(.8);
+  }
+        }
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>
